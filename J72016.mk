@@ -22,6 +22,6 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier
 PRODUCT_DEVICE := j7xelte
-PRODUCT_NAME := J7-2016
+PRODUCT_NAME := J72016
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
