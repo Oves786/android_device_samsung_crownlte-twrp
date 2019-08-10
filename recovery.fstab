@@ -1,19 +1,15 @@
-/system		ext4	/dev/block/platform/11120000.ufs/by-name/SYSTEM	flags=backup=1
-/system_image	emmc	/dev/block/platform/11120000.ufs/by-name/SYSTEM	flags=backup=0;display="System"
-/data		ext4	/dev/block/platform/11120000.ufs/by-name/USERDATA	flags=length=-20480,encryptable=footer
-/cache		ext4	/dev/block/platform/11120000.ufs/by-name/CACHE	flags=backup=1
-
-/dqmdbg		emmc	/dev/block/platform/11120000.ufs/by-name/DQMDBG flags=backup=1;display="DQMDBG Image";flashimg
-/boot		emmc	/dev/block/platform/11120000.ufs/by-name/BOOT	flags=backup=1;display="Kernel"
-/recovery	emmc	/dev/block/platform/11120000.ufs/by-name/RECOVERY	flags=backup=1;display="Recovery"
-
-/modem_debug	emmc	/dev/block/platform/11120000.ufs/by-name/CP_DEBUG	flags=backup=1;display="CPDEB (MODEM_DEBUG)"
-/modem		emmc	/dev/block/platform/11120000.ufs/by-name/RADIO	flags=backup=1;display="Baseband (MODEM)"
-/efs		ext4	/dev/block/platform/11120000.ufs/by-name/EFS	flags=backup=1;display="EFS"
-
-/vendor		ext4	/dev/block/platform/11120000.ufs/by-name/VENDOR	flags=backup=1;display="Vendor";wipeingui
-/vendor_image	emmc	/dev/block/platform/11120000.ufs/by-name/VENDOR	flags=backup=0;display="Vendor"
-/odm		ext4	/dev/block/platform/11120000.ufs/by-name/ODM	flags=backup=1;display="ODM";flashimg;wipeingui
-
-/external_sd	vfat	/dev/block/mmcblk0p1 /dev/block/mmcblk0	flags=display="Micro SDcard";storage;wipeingui;removable
-/usb-otg	vfat	/dev/block/sdf1 /dev/block/sdf		flags=display="USB-OTG";storage;wipeingui;removable
+/boot		emmc	/dev/block/platform/13540000.dwmmc0/by-name/BOOT
+/recovery	emmc	/dev/block/platform/13540000.dwmmc0/by-name/RECOVERY	flags=backup=1
+/system		ext4	/dev/block/platform/13540000.dwmmc0/by-name/SYSTEM
+/data		ext4	/dev/block/platform/13540000.dwmmc0/by-name/USERDATA	flags=encryptable=footer;length=-20480
+/cache		ext4	/dev/block/platform/13540000.dwmmc0/by-name/CACHE
+/modem		emmc	/dev/block/platform/13540000.dwmmc0/by-name/RADIO	flags=backup=1;display="Modem"
+/modem-cdma	emmc	/dev/block/platform/13540000.dwmmc0/by-name/CDMA-RADIO	flags=backup=1;display="CDMA Modem";subpartitionof=/modem
+/modem-debug	emmc	/dev/block/platform/13540000.dwmmc0/by-name/CP_DEBUG	flags=backup=1;display="Modem Debug";subpartitionof=/modem
+/efs		ext4	/dev/block/platform/13540000.dwmmc0/by-name/EFS		flags=backup=1;display="EFS"
+/cpefs		ext4	/dev/block/platform/13540000.dwmmc0/by-name/CPEFS	flags=backup=1;display="CPEFS";subpartitionof=/efs
+/m9kefs1	emmc	/dev/block/platform/13540000.dwmmc0/by-name/m9kefs1	flags=backup=1;subpartitionof=/efs
+/m9kefs2	emmc	/dev/block/platform/13540000.dwmmc0/by-name/m9kefs2	flags=backup=1;subpartitionof=/efs
+/m9kefs3	emmc	/dev/block/platform/13540000.dwmmc0/by-name/m9kefs3	flags=backup=1;subpartitionof=/efs
+/external_sd	vfat	/dev/block/mmcblk1p1 /dev/block/mmcblk1			flags=display="Micro SDcard";storage;wipeingui;removable
+/usb-otg	vfat	/dev/block/sda1 /dev/block/sda				flags=display="USB-OTG";storage;wipeingui;removable
