@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/Note9.mk
+    $(LOCAL_DIR)/J72016.mk
