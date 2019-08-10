@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo Note9-eng
+add_lunch_combo J72016-eng
