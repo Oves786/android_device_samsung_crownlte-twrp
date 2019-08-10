@@ -25,7 +25,7 @@ BOARD_SEPOLICY_VERS := 28.0
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/samsung/j7xelte
-TARGET_KERNEL_CONFIG := crownlte-twrp-els_defconfig
+TARGET_KERNEL_CONFIG := j7xelte_defconfig
 # KERNEL_TOOLCHAIN := /path/to/your/gcc/bin
 # KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
 
